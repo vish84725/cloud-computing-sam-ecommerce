@@ -1,0 +1,12 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "userpool-stack-poc"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-xy7mbe4foe1a"
+s3_prefix = "userpool-stack-poc"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "AppName=\"userpoolapp\" ClientDomains=\"http://localhost:8080\" AdminEmail=\"vish847255@gmail.com\" AddGroupsToScopes=\"true\""
+image_repositories = []
