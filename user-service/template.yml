@@ -6,18 +6,21 @@ Parameters:
   AppName:
     Type: String
     Description: Name of the application
+    Default: "iitecomuserpool"
   ClientDomains:
     Type: CommaDelimitedList
     Description: Array of domains allowed to use this UserPool
+    Default: "http://localhost:8080"
   AdminEmail:
     Type: String
     Description: Email address for administrator
+    Default: "vish847255@gmail.com"
   AddGroupsToScopes:
     Type: String
     AllowedValues:
       - 'true'
       - 'false'
-    Default: 'false'
+    Default: 'true'
 
 Conditions:
   ScopeGroups:
